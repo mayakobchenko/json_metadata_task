@@ -1,6 +1,7 @@
 # json_metadata_task
-Import json and display in human readable version
-There are two approaches implemented, one serves the data to a webrowser, another one displays the data in a terminal
+Imports a json file containing nested dictionaries and displays it in human readable version
+
+There are two approaches implemented: uvicorn server serves the data to a webbrowser, read_print_json.py displays the data in a terminal
 
 create a virtual environment
 ``` sh
