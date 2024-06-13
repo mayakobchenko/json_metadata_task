@@ -1,8 +1,8 @@
 # json_metadata_task
 import json and display in human readable version
-
+```
 $ cd deliver_maya
-
+```
 create a virtual environment
 ``` sh
 $ python -m venv myenv
@@ -14,7 +14,7 @@ $ .\myenv\Scripts\Activate.ps1
 ```
 on Mac and Linux
 ```
-source myenv/bin/activate
+$ source myenv/bin/activate
 ```
 ```
 $ python -m pip install --upgrade pip
