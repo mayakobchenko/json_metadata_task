@@ -1,5 +1,6 @@
 # json_metadata_task
-import json and display in human readable version
+Import json and display in human readable version
+There are two approaches implemented, one serves the data to a webrowser, another one displays the data in a terminal
 ```
 $ cd deliver_maya
 ```
@@ -27,3 +28,4 @@ run the uvicorn server
 ```
 $ uvicorn main:app --reload
 ```
+Open the frontend in you browser http://127.0.0.1:8000 or http://localhost:8000
