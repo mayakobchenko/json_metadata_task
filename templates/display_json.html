@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Data</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid green;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nested Dictionary</h1>
+    <ul>
+        {% for key, value in json_data.items() %}
+            <li><strong>{{ key }}:</strong>: 
+                {% if value is mapping %}
+                    <ul>
+                        {% for subkey, subvalue in value.items() %}
+                            <li><strong>{{ subkey }}:</strong>: 
+                                {% if subvalue is mapping %}
+                                    <ul>
+                                        {% for subsubkey, subsubvalue in subvalue.items() %}
+                                            <li>{{ subsubkey }}: {{ subsubvalue }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% elif subvalue|is_list_of_dicts %}
+                                    <table>
+                                        {% for item in subvalue %}
+                                            {% if item is mapping %}
+                                                <tr>
+                                                    {% for key, value in item.items() %}
+                                                    <tr>
+                                                        <td>{{ key }}</td>
+                                                        <td>{{ value }}</td>
+                                                    </tr>
+                                                    {% endfor %}
+                                                </tr>
+                                            {% else %}
+                                                <tr>
+                                                    <td colspan="2">{{ item }}</td>
+                                                </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </table>    
+                                {% else %}
+                                    {{ subvalue }}
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% elif value|is_list_of_dicts %}
+                    <table>
+                        {% for item in value %}
+                            {% if item is mapping %}
+                                <tr>
+                                    {% for key, value in item.items() %}
+                                    <tr>
+                                        <td>{{ key }}</td>
+                                        <td>{{ value }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tr>
+                            {% else %}
+                                <tr>
+                                    <td colspan="2">{{ item }}</td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                    </table>          
+                {% else %}
+                    {{ value }}
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Link</h1>
+    <ul>
+        <li><strong>DOI:</strong> <a href="{{ json_data.doi }}">{{ json_data.doi }}</a></li>
+        <!-- Add more fields as needed -->
+    </ul>
+</body>
+</html>
