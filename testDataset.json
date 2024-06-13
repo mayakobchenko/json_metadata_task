@@ -1,0 +1,150 @@
+{
+    "@context": {
+        "@vocab": "https://schema.hbp.eu/myQuery/"
+    },
+    "technique": [{
+            "fullName": "image registration"
+        },
+        {
+            "fullName": "immunohistochemistry"
+        }
+    ],
+    "doi": "https://doi.org/10.25493/Y147-2CE",
+    "experimentalApproach": [{
+            "fullName": "cell population characterization"
+        },
+        {
+            "fullName": "histology"
+        },
+        {
+            "fullName": "anatomy"
+        },
+        {
+            "fullName": "microscopy"
+        }
+    ],
+    "protocols": [],
+    "relatedPublications": [{
+        "identifier": "https://doi.org/10.1016/j.neuroscience.2009.03.048"
+    }],
+    "studiedSpecimen": [{
+            "species": [{
+                "species": {
+                    "fullName": "Mus musculus"
+                },
+                "fullName": "C57BL/6J",
+                "geneticStrainType": {
+                    "fullName": "wildtype"
+                }
+            }],
+            "type": [
+                "https://openminds.ebrains.eu/core/Subject"
+            ],
+            "studiedState": [{
+                "lookupLabel": "2002_state-01",
+                "type": [
+                    "https://openminds.ebrains.eu/core/SubjectState"
+                ],
+                "ageCategory": [{
+                    "fullName": "adult"
+                }]
+            }],
+            "internalIdentifier": "2002"
+        },
+        {
+            "species": [{
+                "species": {
+                    "fullName": "Rattus norvegicus"
+                },
+                "fullName": "Wistar",
+                "geneticStrainType": {
+                    "fullName": "wildtype"
+                }
+            }],
+            "type": [
+                "https://openminds.ebrains.eu/core/Subject"
+            ],
+            "studiedState": [{
+                "lookupLabel": "2001_state-01",
+                "type": [
+                    "https://openminds.ebrains.eu/core/SubjectState"
+                ],
+                "ageCategory": [{
+                    "fullName": "adult"
+                }]
+            }],
+            "internalIdentifier": "2001"
+        }
+    ],
+    "preparationDesign": [{
+        "fullName": "ex vivo"
+    }],
+    "keyword": [
+        "Glutamate uptake",
+        "Neurtransmitter transport",
+        "Synaptic transmission",
+        "Brain-wide",
+        "Atlas"
+    ],
+    "dataset": {
+        "datasetCustodian": [{
+            "givenName": "Niels C.",
+            "familyName": "Danbolt"
+        }],
+        "fullName": "Brain-wide distribution of glutamate type 1 transporter protein (GLT1)",
+        "description": "Glutamate is the major excitatory transmitter in the central nervous system (Danbolt, Prog. Neurobiol. 65:1-105, 2001). It is inactivated by cellular uptake, mostly catalyzed by the glutamate transporters GLT1 (slc1a2, excitatory amino acid transporter [EAAT2]) subtype expressed at high levels in brain astrocytes and at lower levels in neurons. Three C-terminal variants of EAAT2 exist: GLT1a (Pines et al., Nature 360:464-467, 1992), GLT1b (Utsunomiya-Tate et al., FEBS Lett 416:312-326,1997), and GLT1c (Rauen et al., Neurochem. Int. 45:1095-1106, 2004). This dataset is brain-wide collection of microscopic images showing the brain-wide distribution of GLT1 in the mouse and rat brain, visualized by immunohistochemistry using antibodies against GLT1a and GLT1b. To facilitate identification of anatomical location adjacent section were stained to reveal cyto- and myeloarchitecture.",
+        "datasetAuthor": [{
+                "givenName": "Silvia",
+                "familyName": "Holmseth"
+            },
+            {
+                "givenName": "Heather A.",
+                "familyName": "Scott"
+            },
+            {
+                "givenName": "Katia",
+                "familyName": "Real"
+            },
+            {
+                "givenName": "Knut Petter",
+                "familyName": "Lehre"
+            },
+            {
+                "givenName": "Trygve Brauns",
+                "familyName": "Leergaard"
+            },
+            {
+                "givenName": "Jan G.",
+                "familyName": "Bjaalie"
+            },
+            {
+                "givenName": "Niels C.",
+                "familyName": "Danbolt"
+            }
+        ]
+    },
+    "accessibility": {
+        "name": "free access"
+    },
+    "firstReleasedAt": "2021-12-22T10:17:42.064Z",
+    "lastReleasedAt": "2023-04-07T11:13:44.695Z",
+    "type": [
+        "https://openminds.ebrains.eu/core/DatasetVersion"
+    ],
+    "ethicsAssessment": [
+        "https://openminds.ebrains.eu/instances/ethicsAssessment/EUCompliantNonSensitive"
+    ],
+    "contentTypes": [
+        "image/tiff",
+        "application/pdf"
+    ],
+    "license": {
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode",
+        "label": "Creative Commons Attribution-ShareAlike 4.0 International"
+    },
+    "projects": [{
+        "fullName": "Rodent brain neurotransporter atlas: GLT1"
+    }],
+    "versionInnovation": "This is the only version of this dataset.",
+    "version": "v1"
+}
