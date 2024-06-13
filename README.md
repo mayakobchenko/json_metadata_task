@@ -1,9 +1,7 @@
 # json_metadata_task
 Import json and display in human readable version
 There are two approaches implemented, one serves the data to a webrowser, another one displays the data in a terminal
-```
-$ cd deliver_maya
-```
+
 create a virtual environment
 ``` sh
 $ python -m venv myenv
